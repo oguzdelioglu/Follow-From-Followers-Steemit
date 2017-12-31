@@ -27,20 +27,12 @@ foreach($diff as $user => $value)
 	echo "<tr>";
 	echo '<td align="center"><a target="_BLANK" href="https://www.steemit.com/@'.$value.'"/>'.$value.'</td>';
 	echo "</tr>";
-	wait(0.1);
 }
 echo '<center>People I have not followed<br>Total:'.sizeof($diff).'</center>';
 echo '</table>';
 echo '</div>';
 echo '<center>Finish</center>';
 echo '</body>';
-
-function wait($time)
-{
-	usleep(1000000*$time);
-	ob_flush();
-	flush();
-}
 
 function YourFollowers($username) {
 	$total=0;
