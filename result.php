@@ -52,7 +52,6 @@ function YourFollowers($username) {
 	echo "<center>Following:".$total."</center>";
 	return $allusers;
 }
-
 function FollowersOfYou($username) {
 	$total=0;
 	$allusers=array();
