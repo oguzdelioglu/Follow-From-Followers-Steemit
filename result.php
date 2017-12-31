@@ -1,5 +1,4 @@
 <?php
-ini_set("max_execution_time", 0);
 $username = $_GET["username"];
 $YourFollowers  = YourFollowers($username);
 $FollowersOfYou = FollowersOfYou($username);
